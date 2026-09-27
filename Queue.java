@@ -81,6 +81,17 @@ public class Queue {
 
         q.displayQueue();
 
+
+    
+  
+    q.dequeue(); 
+    q.dequeue(); 
+    q.dequeue(); 
+    System.out.println("Served 3 students.");
+
+
+    q.displayQueue();
+
        
         int choice = 0;
 
@@ -97,16 +108,16 @@ public class Queue {
 
             switch (choice) {
                 case 1:
-                    System.out.print("Student No: ");
+                    System.out.println("Student No: ");
                     String no = input.nextLine();
 
-                    System.out.print("Name: ");
+                    System.out.println("Name: ");
                     String name = input.nextLine();
 
-                    System.out.print("Service Type: ");
+                    System.out.println("Service Type: ");
                     String service = input.nextLine();
 
-                    System.out.print("Estimated Time (min): ");
+                    System.out.println("Estimated Time (min): ");
                     int time = input.nextInt();
                     input.nextLine();
 

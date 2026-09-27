@@ -60,7 +60,7 @@ public class Postfix {
         if (isEmpty()) {
             System.out.println("Stack is empty.");
         } else {
-            System.out.print("Stack (bottom -> top): ");
+            System.out.print("Stack =: ");
             for (int i = 0; i <= top; i++) {
                 System.out.print(stack[i] + " ");
             }
@@ -92,7 +92,7 @@ public class Postfix {
                     }
 
                     push(result);
-                    System.out.println("Apply " + sign + " -> result " + result);
+                    System.out.println("Apply " + sign + " = " + result);
                     displayStack();
                     break;
 
@@ -103,7 +103,7 @@ public class Postfix {
                     break;
             }
         }
-
+ 
         return pop();
     }
 
